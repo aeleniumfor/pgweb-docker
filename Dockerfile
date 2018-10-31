@@ -5,4 +5,4 @@ RUN apk add unzip && unzip pgweb_linux_amd64.zip && mv pgweb_linux_amd64.zip pgw
 FROM alpine:latest
 COPY --from=build ./pgweb ./app
 EXPOSE 8080
-CMD [ "./app/pgweb_linux_amd64", "--sessions" ,"--bind=0.0.0.0", "--listen=8080" ]
+CMD [ "./app/pgweb", "--sessions" ,"--bind=0.0.0.0", "--listen=8080" ]
