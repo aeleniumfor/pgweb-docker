@@ -6,5 +6,3 @@ pgwebのdocker用レポジトリ
 ```bash
 $ docker run sasenomura/pgweb -p 8080:8080
 ```
-
-
